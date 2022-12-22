@@ -1,0 +1,36 @@
+.search-bar {
+  padding: 32px;
+  margin-bottom: 50px;
+}
+mat-card {
+  padding: 16px;
+}
+.search-bar button{
+  width: fit-content;
+  align-self: center;
+  background-color: #b53faf;
+}
+
+.img-card {
+  height: 100%;
+}
+
+mat-card img{
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  width: 100%;
+}
+
+mat-card-content {
+  padding: 10px;
+}
+
+.content {
+  padding: 16px;
+}
+
+
+.column-label {
+  margin-right: 8px;
+  font-size: 1rem;
+}

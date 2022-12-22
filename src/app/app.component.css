@@ -1,0 +1,15 @@
+mat-toolbar {
+  justify-content: space-between;
+}
+
+.content {
+  padding: 16px;
+}
+
+footer{
+  text-align: center;
+  background-color: rgb(219, 215, 215);
+  height: 50 px;
+}
+
+

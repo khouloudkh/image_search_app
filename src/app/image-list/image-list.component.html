@@ -1,0 +1,33 @@
+<!-- <div><strong>image-list works!</strong></div> -->
+
+<div class="content">
+
+  <mat-card class="search-bar">
+    <mat-form-field>
+      <input class="search" matInput [(ngModel)]="searchQuery"
+      name="search" placeholder="Search for images">
+    </mat-form-field>
+    <button (click)="searchImages(searchQuery)"
+     mat-raised-button class="searchButton" type="button">search</button>
+  </mat-card>
+
+  <div fxLayout="row wrap" fxLayoutGap="16px grid">
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let image of images.hits">
+      <mat-card class="img-card">
+        <mat-card-header>
+          <div class="avatar" mat-card-avatar [ngStyle]="{'background-image':'url('+ image.userImageURL +')', 'background-size':'40px 40px'}"></div>
+          <mat-card-title>{{ image.user }}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="{{image.webformatURL}}">
+        <mat-card-content>
+          <p><strong> Tags:</strong> {{ image.tags }}</p>
+          <p><strong> Likes:</strong> {{ image.likes }} ❤</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+
+</div>
+
+
+
